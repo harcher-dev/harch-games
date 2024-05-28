@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff5722;
+    padding: 20px;
+    color: white;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+#word-display {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#guesses-left {
+    margin-bottom: 20px;
+}
+
+#letters {
+    margin-top: 20px;
+}
+
+#settings {
+    margin-top: 50px;
+    font-size: small;
+}
+
+#settings select {
+    width: 150px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.game-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    user-select: none; /* Disable text selection */
+}
+
+.game-button:hover {
+    background-color: #e64a19;
+}
+
+.game-button:active {
+    background-color: #d84315;
+    transform: scale(0.95);
+}
+
+
+.game-button.clicked {
+    transform: scale(0.95);
+    background-color: #d84315;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff5722;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.popup span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #777;
+}
