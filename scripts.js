@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Flappy Bird', url: 'flappy-bird.html' },
         { name: 'Hangman', url: 'hangman.html' },
         { name: 'Snake', url: 'snake.html' },
+        { name: '3D Car Game Thing', url: 'cargame.html' },
         // Add more games here
     ];
 
